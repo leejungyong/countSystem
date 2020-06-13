@@ -1,0 +1,67 @@
+<view class="detail-wrap">
+    <view class="common-wrap">
+        <view class="title">数据挖掘目的</view>
+        <view class="value-wrap">
+            <view wx:for="{{purpose}}" wx:key="index" class="item">
+               {{item.purposeName}}
+            </view>
+        </view>
+    </view>
+    <view class="common-wrap">
+        <view class="title">数据录入</view>
+        <view class="value-wrap">
+            <view wx:for="{{entry}}" wx:key="index" class="item">
+                <view class="name">{{item.entryName}}</view>
+                <view class="price">￥{{item.totalPrice}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="common-wrap">
+        <view class="title">数据清洗</view>
+        <view class="value-wrap">
+            <view wx:for="{{clean}}" wx:key="index" class="item">
+                <view class="name">{{item.cleanName}}</view>
+                <view class="price">￥{{item.totalPrice}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="common-wrap">
+        <view class="title">数据分析</view>
+        <view class="value-wrap">
+            <view wx:for="{{goal}}" wx:key="index" class="item">
+                <view class="name">{{item.count}}项{{item.typeName}}</view>
+                <view class="price">￥{{item.totalPrice}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="common-wrap">
+        <view class="title">数据挖掘方法</view>
+        <view class="value-wrap">
+            <view wx:for="{{method}}" wx:key="index" class="item">
+                <view class="name">{{item.methodName}}</view>
+                <view class="price">{{item.totalPrice?'￥':''}}{{item.totalPrice}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="common-wrap">
+        <view class="title">诊次数量</view>
+        <view class="item">{{number}}</view>
+    </view>
+     <view class="common-wrap">
+        <view class="title">数据分析报告</view>
+        <view class="item">
+            <view class="name">报告</view>
+            <view class="price">￥{{reporter}}</view>
+            </view>
+    </view>
+    <view class="total-wrap">
+        ￥{{totalPrice}}
+        <view class="total">共计：</view>
+    </view>
+    <view class="btn" bindtap='sureOrder'>确认</view>
+</view>
+
+<view wx:if="{{showCodePic}}" class="img-mask-wrap" >
+    <image src="{{codeImg}}" class="img" mode="widthFix" />
+    <view class="small-btn" bindtap='goHome'>返回首页</view>
+</view>

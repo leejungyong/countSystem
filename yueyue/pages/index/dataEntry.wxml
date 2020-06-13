@@ -1,0 +1,21 @@
+<view class="title">
+  数据录入(必选-单选)
+</view>
+<view class="list">
+  <view class="item" wx:for="{{list}}" wx:key="index" id="{{index}}" bindtap="select">
+    <view class="name">{{item.name}}</view>
+    <view class="check">
+      <view class="minibox {{item.checked?'checked':''}}"></view>
+    </view>
+  </view>
+  <!-- <view class="item"  bindtap="selectNo">
+    <view class="name">不需要录入</view>
+    <view class="check">
+      <view class="minibox {{item.checked?'checked':''}}"></view>
+    </view>
+  </view> -->
+</view>
+<!-- <view class="bottom" bindtap="next">下一步</view> -->
+ <view class="bottom">
+    <view class="btn" bindtap="next">下一步</view>
+</view>

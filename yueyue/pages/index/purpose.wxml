@@ -1,0 +1,15 @@
+<view class="title">
+  数据挖掘目的(可多选)
+</view>
+<view class="list">
+  <view class="item" wx:for="{{list}}" wx:key="index" id="{{index}}" bindtap="select">
+    <view class="name">{{item.name}}</view>
+    <view class="check">
+      <view class="minibox {{item.checked?'checked':''}}"></view>
+    </view>
+  </view>
+</view>
+<!-- <view class="bottom" bindtap="next">下一步</view> -->
+ <view class="bottom">
+        <view class="btn" bindtap="next">下一步</view>
+    </view>

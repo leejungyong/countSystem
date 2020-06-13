@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/index/home",
+    "pages/index/purpose",
+    "pages/index/dataEntry",
+    "pages/index/dataClean",
+    "pages/index/goalOfTypeOne",
+    "pages/index/goalOfTypeTwo",
+    "pages/index/goalOfTypeThree",
+    "pages/index/goalOfTypeForth",
+    "pages/index/methods",
+    "pages/index/number",
+    "pages/index/detail",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "数据挖掘诊费核算",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

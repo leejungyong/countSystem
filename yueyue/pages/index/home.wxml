@@ -1,0 +1,24 @@
+<!-- <view class="title"> 数据挖掘委托人员信息</view> -->
+<view class="out-wrap">
+  <view class="item">
+    <view class="text star">单位名称</view>
+    <input class="input"  placeholder="请输入单位名称" placeholder-class="pl" bindinput="getCompany"></input>
+  </view>
+  <view class="item">
+    <view class="text star">电子信箱</view>
+    <input class="input "  placeholder="请输入电子信箱" placeholder-class="pl" bindinput="getEmail"></input>
+  </view>
+  <view class="item">
+    <view class="text star">联系方式</view>
+    <input class="input " type="number" maxlength="11"  placeholder="请输入联系方式" placeholder-class="pl" bindinput="getPhone"></input>
+  </view>
+  <view class="item" style="border-bottom:none;">
+    <view class="text star">完成日期</view>
+    <picker mode="date" bindchange="pickDate" >
+     <view class="input " style="{{date==='请选择完成日期'?'color:#999':'color:#666'}}">{{date}}</view>
+    </picker>
+  </view>
+  <view class="bottom">
+        <view class="btn" bindtap="sure">提交</view>
+    </view>
+</view>

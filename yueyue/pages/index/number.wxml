@@ -1,0 +1,10 @@
+<view class="out-wrap">
+    <view class="input-wrap">
+        <view class="title">数量</view>
+        <input class="input" type="number" bindinput="getNumber" placeholder-class="pl" placeholder="请输入数据挖掘诊次数量"></input>
+    </view>
+    <view class="bottom">
+        <view class="btn" bindtap="sure">提交</view>
+    </view>
+    <view class='total-price' wx:if='{{isShowTotal}}'>总计：￥{{total}}</view>
+</view>
