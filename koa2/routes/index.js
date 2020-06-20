@@ -629,7 +629,7 @@ router.post("/getOrderList1", async (ctx, next) => {
 });
 
 //订单列表
-router.post('/getOrderList',async(ctx,next)=>{
+router.post('/api/getOrderList',async(ctx,next)=>{
  const res= await Modal.getOrderList()
  if(res){
    ctx.body={
@@ -646,7 +646,7 @@ router.post('/getOrderList',async(ctx,next)=>{
  }
 })
 //某一订单详情
-router.post("/getOrderDetail", async (ctx, next) => {
+router.post("/api/getOrderDetail", async (ctx, next) => {
   const { orderId = "" } = ctx.request.body;
   let orderObj = {},
     data = {},

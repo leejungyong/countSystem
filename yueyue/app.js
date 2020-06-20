@@ -13,7 +13,7 @@ App({
           console.log(res.code)
           // 发送 res.code 到后台换取 openId, sessionKey, unionId  
           wx.request({
-            url: 'http://47.111.246.145:3000/getUserInfo',
+            url: 'https://47.111.246.145/getUserInfo',
             method: 'POST',
             data: {
               code: res.code
@@ -77,6 +77,7 @@ App({
       method:null,
       number:null
     },
-    api:'http://47.111.246.145:3000'
+    api:'https://47.111.246.145'
+    // api:'http://www.datamining-cost.com.cn:80'
   }
 })

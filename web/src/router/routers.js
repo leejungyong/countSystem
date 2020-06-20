@@ -51,15 +51,6 @@ export default [
     ]
   },
   {
-    path: '',
-    name: 'doc',
-    meta: {
-      title: '文档',
-      href: 'https://lison16.github.io/iview-admin-doc/#/',
-      icon: 'ios-book'
-    }
-  },
-  {
     path: '/order',
     name: 'order',
     component: Main,
